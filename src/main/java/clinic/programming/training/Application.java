@@ -3,7 +3,7 @@ package clinic.programming.training;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.*;
 import org.apache.commons.lang3.StringUtils;
 
 public class Application {
@@ -31,6 +31,7 @@ public class Application {
     	System.out.println("Starting Application");
 	    Application app = new Application();
       app.greet();
+      System.out.println("Class Path: " + System.getProperty("java.class.path"));
       int count = app.countWords("I have four words");
       System.out.println("Word Count: " + count);
     }
